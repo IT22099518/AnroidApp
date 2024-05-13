@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background4"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,11 +14,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp"
-        android:text="My Tasks"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="18dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="92dp"
+        android:fontFamily="@font/arbutus"
+        android:text="Task Tracker Plus"
         android:textColor="@color/orange"
-        android:textSize="24sp"/>
+        android:textSize="24sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/notesRecyclerView"
@@ -30,15 +34,27 @@
         android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="337dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="@color/orange"
         android:src="@drawable/baseline_add_24"
-        app:tint="@color/white"
-        android:backgroundTint="@color/orange"/>
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/copyrightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:text="Copyright © 2024 Task Tracker Plus. All rights reserved." />
 
 
 
